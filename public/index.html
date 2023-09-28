@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Del monte</title>
+  <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <main>
+    <h1 class="title">Demo frase Del Monte</h1>
+    <div class="wrapperLogo">
+      <picture>
+        <source srcset="./images/logo.webp" media="image/webp" />
+        <img src="./images/logo.png" alt="logo" class="logo" />
+      </picture>
+    </div>
+    <div class="wrapperText">
+      <h2 class="tituloFrase">Frase:</h2>
+      <p class="frase" id="frase">Archi requete recontra rica</p>
+    </div>
+    <div class="wrapperButtons">
+      <button onclick="startRecording(this);" class="record">Grabar</button>
+      <button onclick="stopRecording(this);" class="stop" disabled>Detener</button>
+    </div>
+    <div class="wrapperSpinner" id="wrapperSpinner">
+      <!-- Aqui va a parecer el spinner-->
+      <div id="spinner" class="spinner"></div>
+    </div>
+    <div class="data-speech" id="data-speech">
+      <h2 class="title-data">Resultados:</h2>
+      <h3>La frase a evaluar es:</h3>
+      <p class="frase-response" id="frase_response"></p>
+      <h3>La frase dicha fue:</h3>
+      <p id="speech"></p>
+      <h3>Score:</h3>
+      <p class="text-score" id="score"></p>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/audioRecord.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/alerts.js"></script>
+  </body>
+</html>
