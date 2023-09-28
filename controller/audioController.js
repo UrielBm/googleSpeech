@@ -39,6 +39,7 @@ class audioController {
         .join("\n");
       return transcription;
     } catch (error) {
+      console.log(error);
       const speechText = "archi requete compa rica";
       return speechText;
     }
